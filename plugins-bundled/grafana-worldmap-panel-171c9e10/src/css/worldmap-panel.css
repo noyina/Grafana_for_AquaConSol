@@ -1,0 +1,50 @@
+.mapcontainer {
+  overflow: hidden;
+}
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgb(135, 209, 153);
+  background: rgba(226, 241, 241, 0.979);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  line-height: 18px;
+  color: rgb(12, 11, 11);
+  display: flex;
+  flex-direction: column;
+}
+
+.legend-item {
+  white-space: break-spaces;
+}
+.legend-itemo {
+  white-space: nowrap;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.legend i {
+  width: 22px;
+  height: 22px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.leaflet-top.leaflet-left, .leaflet-bottom.leaflet-left, .leaflet-bottom.leaflet-right {
+  z-index: 1000;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  color: #0a0a09 !important;
+}
+.ImageO {
+  background-color: rgba(255, 0, 0, 0.0);
+}

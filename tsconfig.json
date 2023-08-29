@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "public/",
+    "outDir": "public/dist",
+    "rootDirs": ["public/"],
+    "allowJs": true,
+    "strict": true,
+    "lib":["ESNext","DOM","es5","ES6","DOM.Iterable"],
+    "types":["webpack-env","./node_modules/@types","./src/types","@types/gtag.js","@types/google.analytics","react-native"],
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo"
+  },
+  "extends": "@grafana/tsconfig/base.json",
+  "include": [
+    "public/app/**/*.ts*",
+    "public/e2e-test/**/*.ts",
+    "public/test/**/*.ts",
+    "public/vendor/**/*.ts",
+    "packages/jaeger-ui-components/typings",
+    "packages/grafana-data/typings",
+    "packages/grafana-ui/src/types"
+  ]
+}
